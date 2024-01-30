@@ -14,8 +14,10 @@ https://github.com/IoannisSvolosBht/Skate-Routing-App/assets/124213124/13ef6138-
 * Unterstützte Android-API-Level sind: 22–30.
 
 * Berlin-Graph Ordner muss eingefügt werden in /mnt/sdcard/download/graphhopper/maps/
+  [Berlin-gh](https://drive.google.com/drive/folders/1f0TnXo6IR2YehuK_q4PeIiljeIEktcyi?usp=drive_link) - download des Graphen (berlin.map, nodes, edges etc.)
 
-* [Berlin-gh](https://drive.google.com/drive/folders/1f0TnXo6IR2YehuK_q4PeIiljeIEktcyi?usp=drive_link) - download des Graphen (berlin.map, nodes, edges etc.)
+  ![import-map-sdcard](https://github.com/IoannisSvolosBht/Skate-Routing-App/assets/124213124/cdaabd5c-c296-4caf-8a65-20218253a644)
+
 
 
 
