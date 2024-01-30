@@ -9,4 +9,10 @@ https://github.com/IoannisSvolosBht/Skate-Routing-App/assets/124213124/13ef6138-
 
 ## SkateFlagEncoder 
 [core/src/main/java/com/graphhopper/routing/util/SkateFlagEncoder.java](core/src/main/java/com/graphhopper/routing/util/SkateFlagEncoder.java)
+
+# Erste Schritte in Android Studio oder am Android-Smartphone
+Unterstützte Android-API-Level sind: 22–30.
+Berlin-Graph Ordner muss eingefügt werden in /mnt/sdcard/download/graphhopper/maps/
+
+
     
