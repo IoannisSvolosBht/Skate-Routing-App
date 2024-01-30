@@ -7,6 +7,6 @@ Diese App berücksichtigt zur Routenerstellung nicht nur die Regeln der Straßen
 
 https://github.com/IoannisSvolosBht/Skate-Routing-App/assets/124213124/13ef6138-0d58-4b2d-9f76-7a32d6cf7ed0
 
-## SkateFlagEncoder
-[Your Title](core/src/main/java/com/graphhopper/routing/util/SkateFlagEncoder.java)
+## SkateFlagEncoder 
+[link Datei: SkateFlagEncoder.java](core/src/main/java/com/graphhopper/routing/util/SkateFlagEncoder.java)
     
