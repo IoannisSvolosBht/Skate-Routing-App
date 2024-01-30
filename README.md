@@ -15,9 +15,10 @@ https://github.com/IoannisSvolosBht/Skate-Routing-App/assets/124213124/13ef6138-
 
 * Berlin-Graph (berlin.map, nodes, edges etc.) Ordner muss eingefügt werden in /mnt/sdcard/download/graphhopper/maps/
   
-  [Berlin-gh Ordner](https://drive.google.com/drive/folders/1f0TnXo6IR2YehuK_q4PeIiljeIEktcyi?usp=drive_link) - Downloadlink 
+  [berlin-gh Ordner](https://drive.google.com/drive/folders/1f0TnXo6IR2YehuK_q4PeIiljeIEktcyi?usp=drive_link) - Downloadlink 
 
-  ![import-map-sdcard](https://github.com/IoannisSvolosBht/Skate-Routing-App/assets/124213124/cdaabd5c-c296-4caf-8a65-20218253a644)
+  ![import-map-sdcard](https://github.com/IoannisSvolosBht/Skate-Routing-App/assets/124213124/c2d8c3ff-6ee7-4a3e-89b5-88e9b1f23cd3)
+
 
 
 
