@@ -9,7 +9,7 @@ Diese App berücksichtigt zur Routenerstellung nicht nur die Regeln der Straßen
 
 https://github.com/IoannisSvolosBht/Skate-Routing-App/assets/124213124/13ef6138-0d58-4b2d-9f76-7a32d6cf7ed0
 
-
+##
 
 # SkateFlagEncoder 
 [core/src/main/java/com/graphhopper/routing/util/SkateFlagEncoder.java](core/src/main/java/com/graphhopper/routing/util/SkateFlagEncoder.java)
@@ -31,7 +31,7 @@ https://github.com/IoannisSvolosBht/Skate-Routing-App/assets/124213124/13ef6138-
 # So wurde der Berlin-Graph erstellt
 
   1. [Download openstreetmap file](https://download.geofabrik.de/europe/germany/berlin.html)
-  2. [/config-example.yml] (/config-example.yml) anpassen - wird im nächsten Schritt vom Scriptfile ./graphhopper.sh verwendet um FlagEncoder, Graph bytes und Encoded Values zu bestimmen.
+  2. [Skate-Routing-App/config-example.yml] (Skate-Routing-App/config-example.yml) anpassen - wird im nächsten Schritt vom Scriptfile ./graphhopper.sh verwendet um FlagEncoder, Graph bytes und Encoded Values zu bestimmen.
 
     config-example.yml Datei
   
@@ -48,7 +48,7 @@ https://github.com/IoannisSvolosBht/Skate-Routing-App/assets/124213124/13ef6138-
      
     ```  
 
-  3. ./graphhopper.sh -a import -i <openstreetmapfile> ausführen. Das erstellt die Routing Daten
+  3. [Skate-Routing-App/graphhopper.sh] ./graphhopper.sh -a import -i <openstreetmapfile> ausführen. Das erstellt die Routing Daten
   4. berlin-gh wurde nun erstellt (nodes, edges etc.)
   5. [Download a map berlin.map](http://download.mapsforge.org/maps/)
   6. berlin.map (Grundkarte) im gerade erstellten berlin-gh Ordner kopieren
@@ -63,8 +63,6 @@ https://github.com/IoannisSvolosBht/Skate-Routing-App/assets/124213124/13ef6138-
 * OSM file berlin-latest.oms.pbf um Routing Daten zu erstellen von Geofabrik [Download openstreetmap file](https://download.geofabrik.de/europe/germany/berlin.html)
 
 * Routing Engine von GraphHopper [Graphhopper 0.13.0](https://github.com/graphhopper/graphhopper/tree/0.13). Die App basiert grundsätzlich auf der Version Graphhopper 0.13.0. Es wurden beim erstellen des SkateFlagEncoders aber auch einige Klassen aus höheren Versionen manuell hinzugefügt wie z.B. EncodingValue Smoothness (bei Graphhopper erst ab Version 1.0).
-  
-
 
 
 
