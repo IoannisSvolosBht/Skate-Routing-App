@@ -12,20 +12,20 @@ https://github.com/IoannisSvolosBht/Skate-Routing-App/assets/124213124/13ef6138-
 
 # Erste Schritte in Android Studio oder am Android-Smartphone
 
-⋅⋅⋅ Unterstützte Android-API-Level sind: 22–30.
+* Unterstützte Android-API-Level sind: 22–30.
 
 
 
-⋅⋅⋅ Berlin-Graph (berlin.map, nodes, edges etc.) Ordner muss im Device Explorer kopiert werden unter: ```/sdcard/download/graphhopper/maps/ ```
+* Berlin-Graph (berlin.map, nodes, edges etc.) Ordner muss im Device Explorer kopiert werden unter: ```/sdcard/download/graphhopper/maps/ ```
   
-⋅⋅⋅ [berlin-gh Ordner](https://drive.google.com/drive/folders/1f0TnXo6IR2YehuK_q4PeIiljeIEktcyi?usp=drive_link) - Downloadlink
+ [berlin-gh Ordner](https://drive.google.com/drive/folders/1f0TnXo6IR2YehuK_q4PeIiljeIEktcyi?usp=drive_link) - Downloadlink
 
-⋅⋅⋅ Solarized dark             |
-   :-------------------------:|
-   ![import-map-sdcard](https://github.com/IoannisSvolosBht/Skate-Routing-App/assets/124213124/c2d8c3ff-6ee7-4a3e-89b5-88e9b1f23cd3)  |
+ Solarized dark             |
+ :-------------------------:|
+ ![import-map-sdcard](https://github.com/IoannisSvolosBht/Skate-Routing-App/assets/124213124/c2d8c3ff-6ee7-4a3e-89b5-88e9b1f23cd3)  |
 
 
-So wurde der Berlin-Graph erstellt
+# So wurde der Berlin-Graph erstellt
   1. [Download openstreetmap file](https://download.geofabrik.de/europe/germany/berlin.html)
   2. config-example.yml anpassen - wird im nächsten Schritt vom Scriptfile ./graphhopper.sh verwendet um FlagEncoder, Graph bytes und Encoded Values zu bestimmen.
   graph.flag_encoders: skate
@@ -55,8 +55,7 @@ So wurde der Berlin-Graph erstellt
   
 * OSM file berlin-latest.oms.pbf um Routing Daten zu erstellen von Geofabrik [Download openstreetmap file](https://download.geofabrik.de/europe/germany/berlin.html)
 
-* Routing Engine von GraphHopper [Graphhopper 0.13.0](https://github.com/graphhopper/graphhopper/tree/0.13)
-  Die App basiert grundsätzlich auf der Version Graphhopper 0.13.0. Es wurden beim erstellen des SkateFlagEncoders aber auch einige Klassen aus höheren Versionen manuell hinzugefügt wie z.B. EncodingValue Smoothness (bei Graphhopper erst ab Version 1.0).
+* Routing Engine von GraphHopper [Graphhopper 0.13.0](https://github.com/graphhopper/graphhopper/tree/0.13). Die App basiert grundsätzlich auf der Version Graphhopper 0.13.0. Es wurden beim erstellen des SkateFlagEncoders aber auch einige Klassen aus höheren Versionen manuell hinzugefügt wie z.B. EncodingValue Smoothness (bei Graphhopper erst ab Version 1.0).
   
 
 
