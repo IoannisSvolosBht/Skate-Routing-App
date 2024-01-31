@@ -11,9 +11,12 @@ https://github.com/IoannisSvolosBht/Skate-Routing-App/assets/124213124/13ef6138-
 [core/src/main/java/com/graphhopper/routing/util/SkateFlagEncoder.java](core/src/main/java/com/graphhopper/routing/util/SkateFlagEncoder.java)
 
 # Erste Schritte in Android Studio oder am Android-Smartphone
-* Unterstützte Android-API-Level sind: 22–30.
 
-* Berlin-Graph (berlin.map, nodes, edges etc.) Ordner muss im Device Explorer kopiert werden unter: ```/sdcard/download/graphhopper/maps/ ```
+Unterstützte Android-API-Level sind: 22–30.
+
+
+
+Berlin-Graph (berlin.map, nodes, edges etc.) Ordner muss im Device Explorer kopiert werden unter: ```/sdcard/download/graphhopper/maps/ ```
   
   [berlin-gh Ordner](https://drive.google.com/drive/folders/1f0TnXo6IR2YehuK_q4PeIiljeIEktcyi?usp=drive_link) - Downloadlink
 
@@ -22,18 +25,7 @@ https://github.com/IoannisSvolosBht/Skate-Routing-App/assets/124213124/13ef6138-
   ![import-map-sdcard](https://github.com/IoannisSvolosBht/Skate-Routing-App/assets/124213124/c2d8c3ff-6ee7-4a3e-89b5-88e9b1f23cd3)  |
 
 
-  ![import-map-sdcard](https://github.com/IoannisSvolosBht/Skate-Routing-App/assets/124213124/c2d8c3ff-6ee7-4a3e-89b5-88e9b1f23cd3)
-
-
-# Map & Routing Engine
-* Grundkarte berlin.map von Mapsforge VTM Render Engine [Download a map](http://download.mapsforge.org/maps/)
-  
-* OSM file berlin-latest.oms.pbf um Routing Daten zu erstellen von Geofabrik [Download openstreetmap file](https://download.geofabrik.de/europe/germany/berlin.html)
-
-* Routing Engine von GraphHopper [Graphhopper 0.13.0](https://github.com/graphhopper/graphhopper/tree/0.13)
-  Die App basiert grundsätzlich auf der Version Graphhopper 0.13.0. Es wurden beim erstellen des SkateFlagEncoders aber auch einige Klassen aus höheren Versionen manuell hinzugefügt wie z.B. EncodingValue Smoothness (bei Graphhopper erst ab Version 1.0).
-  
-* So wurde der Berlin-Graph erstellt
+So wurde der Berlin-Graph erstellt
   1. [Download openstreetmap file](https://download.geofabrik.de/europe/germany/berlin.html)
   2. config-example.yml anpassen - wird im nächsten Schritt vom Scriptfile ./graphhopper.sh verwendet um FlagEncoder, Graph bytes und Encoded Values zu bestimmen.
   graph.flag_encoders: skate
@@ -57,10 +49,15 @@ https://github.com/IoannisSvolosBht/Skate-Routing-App/assets/124213124/13ef6138-
   6. berlin.map (Grundkarte) kopieren und im gerade erstellten berlin-gh Ordner einfügen
   7. Berlin-Graph (inkl. berlin.map, nodes, edges etc.) Ordner muss im Device Explorer kopiert werden unter: ```/sdcard/download/graphhopper/maps/ ```
 
-Solarized dark             |  
-:-------------------------:|
-![import-map-sdcard](https://github.com/IoannisSvolosBht/Skate-Routing-App/assets/124213124/c2d8c3ff-6ee7-4a3e-89b5-88e9b1f23cd3)  |  
 
+# Map & Routing Engine
+* Grundkarte berlin.map von Mapsforge VTM Render Engine [Download a map](http://download.mapsforge.org/maps/)
+  
+* OSM file berlin-latest.oms.pbf um Routing Daten zu erstellen von Geofabrik [Download openstreetmap file](https://download.geofabrik.de/europe/germany/berlin.html)
+
+* Routing Engine von GraphHopper [Graphhopper 0.13.0](https://github.com/graphhopper/graphhopper/tree/0.13)
+  Die App basiert grundsätzlich auf der Version Graphhopper 0.13.0. Es wurden beim erstellen des SkateFlagEncoders aber auch einige Klassen aus höheren Versionen manuell hinzugefügt wie z.B. EncodingValue Smoothness (bei Graphhopper erst ab Version 1.0).
+  
 
 
 
