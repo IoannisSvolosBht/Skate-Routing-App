@@ -7,22 +7,22 @@ Diese App berücksichtigt zur Routenerstellung nicht nur die Regeln der Straßen
 
 https://github.com/IoannisSvolosBht/Skate-Routing-App/assets/124213124/13ef6138-0d58-4b2d-9f76-7a32d6cf7ed0
 
-## SkateFlagEncoder 
+# SkateFlagEncoder 
 [core/src/main/java/com/graphhopper/routing/util/SkateFlagEncoder.java](core/src/main/java/com/graphhopper/routing/util/SkateFlagEncoder.java)
 
 # Erste Schritte in Android Studio oder am Android-Smartphone
 
-Unterstützte Android-API-Level sind: 22–30.
+⋅⋅⋅ Unterstützte Android-API-Level sind: 22–30.
 
 
 
-Berlin-Graph (berlin.map, nodes, edges etc.) Ordner muss im Device Explorer kopiert werden unter: ```/sdcard/download/graphhopper/maps/ ```
+⋅⋅⋅ Berlin-Graph (berlin.map, nodes, edges etc.) Ordner muss im Device Explorer kopiert werden unter: ```/sdcard/download/graphhopper/maps/ ```
   
-  [berlin-gh Ordner](https://drive.google.com/drive/folders/1f0TnXo6IR2YehuK_q4PeIiljeIEktcyi?usp=drive_link) - Downloadlink
+⋅⋅⋅ [berlin-gh Ordner](https://drive.google.com/drive/folders/1f0TnXo6IR2YehuK_q4PeIiljeIEktcyi?usp=drive_link) - Downloadlink
 
-  Solarized dark             |
-  :-------------------------:|
-  ![import-map-sdcard](https://github.com/IoannisSvolosBht/Skate-Routing-App/assets/124213124/c2d8c3ff-6ee7-4a3e-89b5-88e9b1f23cd3)  |
+⋅⋅⋅ Solarized dark             |
+   :-------------------------:|
+   ![import-map-sdcard](https://github.com/IoannisSvolosBht/Skate-Routing-App/assets/124213124/c2d8c3ff-6ee7-4a3e-89b5-88e9b1f23cd3)  |
 
 
 So wurde der Berlin-Graph erstellt
@@ -46,8 +46,8 @@ So wurde der Berlin-Graph erstellt
   3. ./graphhopper.sh -a import -i <openstreetmapfile> ausführen. Das erstellt die Routing Daten
   4. berlin-gh wurde nun erstellt (nodes, edges etc.)
   5. [Download a map berlin.map](http://download.mapsforge.org/maps/)
-  6. berlin.map (Grundkarte) kopieren und im gerade erstellten berlin-gh Ordner einfügen
-  7. Berlin-Graph (inkl. berlin.map, nodes, edges etc.) Ordner muss im Device Explorer kopiert werden unter: ```/sdcard/download/graphhopper/maps/ ```
+  6. berlin.map (Grundkarte) im gerade erstellten berlin-gh Ordner kopieren
+  7. berlin-gh Ordner muss nun im Device Explorer kopiert werden unter: ```/sdcard/download/graphhopper/maps/ ```
 
 
 # Map & Routing Engine
