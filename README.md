@@ -31,7 +31,7 @@ https://github.com/IoannisSvolosBht/Skate-Routing-App/assets/124213124/13ef6138-
 # So wurde der Berlin-Graph erstellt
 
   1. [Download openstreetmap file](https://download.geofabrik.de/europe/germany/berlin.html)
-  2. [Skate-Routing-App/config-example.yml] (Skate-Routing-App/config-example.yml) anpassen - wird im nächsten Schritt vom Scriptfile ./graphhopper.sh verwendet um FlagEncoder, Graph bytes und Encoded Values zu bestimmen.
+  2. [config-example.yml] (Skate-Routing-App/config-example.yml) anpassen - wird im nächsten Schritt vom Scriptfile ./graphhopper.sh verwendet um FlagEncoder, Graph bytes und Encoded Values zu bestimmen.
 
     config-example.yml Datei
   
