@@ -9,7 +9,6 @@ Diese App berücksichtigt zur Routenerstellung nicht nur die Regeln der Straßen
 
 https://github.com/IoannisSvolosBht/Skate-Routing-App/assets/124213124/13ef6138-0d58-4b2d-9f76-7a32d6cf7ed0
 
-##
 
 # SkateFlagEncoder 
 [core/src/main/java/com/graphhopper/routing/util/SkateFlagEncoder.java](core/src/main/java/com/graphhopper/routing/util/SkateFlagEncoder.java)
@@ -31,7 +30,7 @@ https://github.com/IoannisSvolosBht/Skate-Routing-App/assets/124213124/13ef6138-
 # So wurde der Berlin-Graph erstellt
 
   1. [Download openstreetmap file](https://download.geofabrik.de/europe/germany/berlin.html)
-  2. [config-example.yml](config-example.yml) anpassen - wird im nächsten Schritt vom Scriptfile ./graphhopper.sh verwendet um FlagEncoder, Graph bytes und Encoded Values zu bestimmen.
+  2. [config-example.yml](config-example.yml) anpassen - wird im nächsten Schritt vom scriptfile [graphhopper.sh](./graphhopper.sh) verwendet um FlagEncoder, Graph bytes und Encoded Values zu bestimmen.
 
     config-example.yml Datei
   
@@ -48,7 +47,7 @@ https://github.com/IoannisSvolosBht/Skate-Routing-App/assets/124213124/13ef6138-
      
     ```  
 
-  3. [graphhopper.sh](./graphhopper.sh) -a import -i <openstreetmapfile> ausführen. Das erstellt die Routing Daten
+  3. ``` [graphhopper.sh](./graphhopper.sh) -a import -i <openstreetmapfile> ``` ausführen. Das erstellt die Routing Daten
   4. berlin-gh wurde nun erstellt (nodes, edges etc.)
   5. [Download a map berlin.map](http://download.mapsforge.org/maps/)
   6. berlin.map (Grundkarte) im gerade erstellten berlin-gh Ordner kopieren
