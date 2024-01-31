@@ -25,25 +25,22 @@ https://github.com/IoannisSvolosBht/Skate-Routing-App/assets/124213124/13ef6138-
 # So wurde der Berlin-Graph erstellt
 
   1. [Download openstreetmap file](https://download.geofabrik.de/europe/germany/berlin.html)
-  2. config-example.yml anpassen - wird im nächsten Schritt vom Scriptfile ./graphhopper.sh verwendet um FlagEncoder, Graph bytes und Encoded Values zu bestimmen.
-  graph.flag_encoders: skate
-  graph.encoded_values: road_class,road_class_link,road_environment,max_speed,road_access,surface,smoothness
-  graph.bytes_for_flags: 8
+  2. [config-example.yml] (config-example.yml) anpassen - wird im nächsten Schritt vom Scriptfile ./graphhopper.sh verwendet um FlagEncoder, Graph bytes und Encoded Values zu bestimmen.
 
-  config-example.yml Datei
+    config-example.yml Datei
   
- ```
- 
- graphhopper:
- OpenStreetMap input file
- datareader.file: some.pbf
+     ```
+     graphhopper:
+     OpenStreetMap input file
+     datareader.file: some.pbf
 
- graph.flag_encoders: skate
+     graph.flag_encoders: skate
 
- graph.encoded_values: road_class,road_class_link,road_environment,max_speed,road_access,surface,smoothness
- If many flag_encoders or encoded_values are used you need to increase bytes_for_flags to 8 or more (multiple of 4)
- graph.bytes_for_flags: 8
-```  
+     graph.encoded_values: road_class,road_class_link,road_environment,max_speed,road_access,surface,smoothness
+     If many flag_encoders or encoded_values are used you need to increase bytes_for_flags to 8 or more (multiple of 4)
+     graph.bytes_for_flags: 8
+     
+    ```  
 
   3. ./graphhopper.sh -a import -i <openstreetmapfile> ausführen. Das erstellt die Routing Daten
   4. berlin-gh wurde nun erstellt (nodes, edges etc.)
