@@ -17,7 +17,7 @@ https://github.com/IoannisSvolosBht/Skate-Routing-App/assets/124213124/13ef6138-
 
 # Erste Schritte in Android Studio oder am Android-Smartphone
 
-* Unterstützte Android-API-Level sind: 22–30.
+* Unterstützte Android-API-Level sind: 22–30
 
 
 * [berlin-gh Graph Ordner](https://drive.google.com/drive/folders/1f0TnXo6IR2YehuK_q4PeIiljeIEktcyi?usp=drive_link) (berlin.map, nodes, edges etc.) Ordner muss im Device Explorer kopiert werden unter: ```/sdcard/download/graphhopper/maps/ ```
@@ -30,7 +30,7 @@ https://github.com/IoannisSvolosBht/Skate-Routing-App/assets/124213124/13ef6138-
 # So wurde der Berlin-Graph erstellt
 
   1. [Download openstreetmap file](https://download.geofabrik.de/europe/germany/berlin.html)
-  2. [config-example.yml](config-example.yml) anpassen - wird im nächsten Schritt vom scriptfile [graphhopper.sh](./graphhopper.sh) verwendet um FlagEncoder, Graph bytes und Encoded Values zu bestimmen.
+  2. [config-example.yml](config-example.yml) anpassen - wird im nächsten Schritt vom scriptfile [graphhopper.sh](./graphhopper.sh) verwendet um FlagEncoder, Graph bytes und Encoded Values zu bestimmen
 
     config-example.yml Datei
   
@@ -47,7 +47,7 @@ https://github.com/IoannisSvolosBht/Skate-Routing-App/assets/124213124/13ef6138-
      
     ```  
 
-  3. ``` [graphhopper.sh](./graphhopper.sh) -a import -i <openstreetmapfile> ``` ausführen. Das erstellt die Routing Daten
+  3. ``` ./graphhopper.sh -a import -i <openstreetmapfile> ``` ausführen. Das erstellt die Routing Daten
   4. berlin-gh wurde nun erstellt (nodes, edges etc.)
   5. [Download a map berlin.map](http://download.mapsforge.org/maps/)
   6. berlin.map (Grundkarte) im gerade erstellten berlin-gh Ordner kopieren
