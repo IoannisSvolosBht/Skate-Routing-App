@@ -15,23 +15,25 @@ https://github.com/IoannisSvolosBht/Skate-Routing-App/assets/124213124/13ef6138-
 * Unterstützte Android-API-Level sind: 22–30.
 
 
-
-* Berlin-Graph (berlin.map, nodes, edges etc.) Ordner muss im Device Explorer kopiert werden unter: ```/sdcard/download/graphhopper/maps/ ```
+* [berlin-gh Graph Ordner](https://drive.google.com/drive/folders/1f0TnXo6IR2YehuK_q4PeIiljeIEktcyi?usp=drive_link) (berlin.map, nodes, edges etc.) Ordner muss im Device Explorer kopiert werden unter: ```/sdcard/download/graphhopper/maps/ ```
   
-   [berlin-gh Ordner](https://drive.google.com/drive/folders/1f0TnXo6IR2YehuK_q4PeIiljeIEktcyi?usp=drive_link) - Downloadlink
-
-   Solarized dark             |
+   Device Explorer            |
    :-------------------------:|
    ![import-map-sdcard](https://github.com/IoannisSvolosBht/Skate-Routing-App/assets/124213124/c2d8c3ff-6ee7-4a3e-89b5-88e9b1f23cd3)  |
 
 
 # So wurde der Berlin-Graph erstellt
+
   1. [Download openstreetmap file](https://download.geofabrik.de/europe/germany/berlin.html)
   2. config-example.yml anpassen - wird im nächsten Schritt vom Scriptfile ./graphhopper.sh verwendet um FlagEncoder, Graph bytes und Encoded Values zu bestimmen.
   graph.flag_encoders: skate
   graph.encoded_values: road_class,road_class_link,road_environment,max_speed,road_access,surface,smoothness
   graph.bytes_for_flags: 8
+
+  config-example.yml Datei
+  
  ```
+ 
  graphhopper:
  OpenStreetMap input file
  datareader.file: some.pbf
