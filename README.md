@@ -3,7 +3,7 @@ Machen Sie Ihre nächste Fahrt oder Ihren nächsten Ausflug mit der Skate-Routin
 
 Diese App berücksichtigt zur Routenerstellung nicht nur die Regeln der Straßenverkehrs-Ordnung für Skateboards, sondern auch physische Faktoren wie Oberfläche, Beschaffenheit, mögliche Barrieren uvm.
 
-## Skate-Routing-App Video Preview in Android Studio
+## Skate-Routing-App Video Resultat in Android Studio
 
 https://github.com/IoannisSvolosBht/Skate-Routing-App/assets/124213124/13ef6138-0d58-4b2d-9f76-7a32d6cf7ed0
 
@@ -19,7 +19,21 @@ https://github.com/IoannisSvolosBht/Skate-Routing-App/assets/124213124/13ef6138-
 
   ![import-map-sdcard](https://github.com/IoannisSvolosBht/Skate-Routing-App/assets/124213124/c2d8c3ff-6ee7-4a3e-89b5-88e9b1f23cd3)
 
-* Config.yml
+
+# Map & Routing Engine
+* Grundkarte berlin.map von Mapsforge VTM Render Engine [Download a map](http://download.mapsforge.org/maps/)
+  
+* OSM file berlin-latest.oms.pbf um Routing Daten zu erstellen von Geofabrik [Download openstreetmap file](https://download.geofabrik.de/europe/germany/berlin.html)
+
+* Routing Engine von GraphHopper [Graphhopper 0.13.0](https://github.com/graphhopper/graphhopper/tree/0.13)
+  Die App basiert grundsätzlich auf der Version Graphhopper 0.13.0. Es wurden beim erstellen des SkateFlagEncoders aber auch einige Klassen aus höheren Versionen manuell hinzugefügt wie z.B. EncodingValue Smoothness (bei Graphhopper erst ab Version 1.0).
+  
+* So wurde der Berlin-Graph erstellt
+  1. [Download openstreetmap file](https://download.geofabrik.de/europe/germany/berlin.html)
+  2. config-example.yml anpassen - wird im nächsten Schritt vom Scriptfile ./graphhopper.sh verwendet um FlagEncoder, Graph bytes und Encoded Values zu bestimmen.
+  graph.flag_encoders: skate
+  graph.encoded_values: road_class,road_class_link,road_environment,max_speed,road_access,surface,smoothness
+  graph.bytes_for_flags: 8
  ```
  graphhopper:
  OpenStreetMap input file
@@ -30,17 +44,18 @@ https://github.com/IoannisSvolosBht/Skate-Routing-App/assets/124213124/13ef6138-
  graph.encoded_values: road_class,road_class_link,road_environment,max_speed,road_access,surface,smoothness
  If many flag_encoders or encoded_values are used you need to increase bytes_for_flags to 8 or more (multiple of 4)
  graph.bytes_for_flags: 8
-```
+```  
 
-# Map & Routing Engine
-* Grundkarte berlin.map von Mapsforge VTM Render Engine [Download a map](http://download.mapsforge.org/maps/)
-  
-* OSM file berlin-latest.oms.pbf um Routing Daten zu erstellen von Geofabrik [Download openstreetmap file](https://download.geofabrik.de/europe/germany/berlin.html)
+  3. ./graphhopper.sh -a import -i <openstreetmapfile> ausführen. Das erstellt die Routing Daten
+  4. berlin-gh wurde nun erstellt (nodes, edges etc.)
+  5. [Download a map berlin.map](http://download.mapsforge.org/maps/)
+  6. berlin.map (Grundkarte) kopieren und im gerade erstellten berlin-gh Ordner einfügen
+  7. Berlin-Graph (inkl. berlin.map, nodes, edges etc.) Ordner muss im Device Explorer kopiert werden unter: ```/sdcard/download/graphhopper/maps/ ```
 
-* Routing Engine von GraphHopper [Graphhopper 0.13.0](https://github.com/graphhopper/graphhopper/tree/0.13)
-  Die App basiert grundsätzlich auf der Version Graphhopper 0.13.0. Es wurden beim erstellen des SkateFlagEncoders aber auch einige Klassen aus höheren Versionen manuell hinzugefügt wie z.B. EncodingValue Smoothness (bei Graphhopper erst ab Version 1.0).
+Solarized dark             |  Solarized Ocean
+:-------------------------:|:-------------------------:
+![](https://...Dark.png)  |  ![](https://...Ocean.png)
 
-  
 
 
 
